@@ -1,0 +1,14 @@
+commands:
+  install: pnpm install
+  typecheck: pnpm typecheck
+  lint: pnpm lint
+  build: pnpm build
+  test: pnpm test
+
+services:
+  web:
+    start: pnpm dev --port 3000
+    stop: lsof -ti :3000 | xargs kill
+    healthcheck: curl -sf http://localhost:3000/pt
+    port: 3000
+    depends_on: []

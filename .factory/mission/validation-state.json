@@ -1,0 +1,226 @@
+{
+  "assertions": {
+    "VAL-BLOG-001": {
+      "status": "pending"
+    },
+    "VAL-BLOG-002": {
+      "status": "pending"
+    },
+    "VAL-BLOG-003": {
+      "status": "pending"
+    },
+    "VAL-BLOG-004": {
+      "status": "pending"
+    },
+    "VAL-BLOG-005": {
+      "status": "pending"
+    },
+    "VAL-BLOG-006": {
+      "status": "pending"
+    },
+    "VAL-BLOG-007": {
+      "status": "pending"
+    },
+    "VAL-BLOG-008": {
+      "status": "pending"
+    },
+    "VAL-BLOG-009": {
+      "status": "pending"
+    },
+    "VAL-BLOG-010": {
+      "status": "pending"
+    },
+    "VAL-BLOG-011": {
+      "status": "pending"
+    },
+    "VAL-BLOG-012": {
+      "status": "pending"
+    },
+    "VAL-BLOG-013": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-001": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-002": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-003": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-004": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-005": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-006": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-007": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-008": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-009": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-010": {
+      "status": "pending"
+    },
+    "VAL-CONTENT-011": {
+      "status": "pending"
+    },
+    "VAL-CROSS-001": {
+      "status": "pending"
+    },
+    "VAL-CROSS-002": {
+      "status": "pending"
+    },
+    "VAL-CROSS-003": {
+      "status": "pending"
+    },
+    "VAL-CROSS-004": {
+      "status": "pending"
+    },
+    "VAL-CROSS-005": {
+      "status": "pending"
+    },
+    "VAL-CROSS-006": {
+      "status": "pending"
+    },
+    "VAL-CROSS-007": {
+      "status": "pending"
+    },
+    "VAL-CROSS-008": {
+      "status": "pending"
+    },
+    "VAL-CROSS-009": {
+      "status": "pending"
+    },
+    "VAL-CROSS-010": {
+      "status": "pending"
+    },
+    "VAL-CROSS-011": {
+      "status": "pending"
+    },
+    "VAL-CROSS-012": {
+      "status": "pending"
+    },
+    "VAL-CROSS-013": {
+      "status": "pending"
+    },
+    "VAL-CROSS-014": {
+      "status": "pending"
+    },
+    "VAL-CROSS-015": {
+      "status": "pending"
+    },
+    "VAL-EVENTS-001": {
+      "status": "pending"
+    },
+    "VAL-EVENTS-002": {
+      "status": "pending"
+    },
+    "VAL-EVENTS-003": {
+      "status": "pending"
+    },
+    "VAL-EVENTS-004": {
+      "status": "pending"
+    },
+    "VAL-EVENTS-005": {
+      "status": "pending"
+    },
+    "VAL-EVENTS-006": {
+      "status": "pending"
+    },
+    "VAL-GALLERY-001": {
+      "status": "pending"
+    },
+    "VAL-GALLERY-002": {
+      "status": "pending"
+    },
+    "VAL-GALLERY-003": {
+      "status": "pending"
+    },
+    "VAL-GALLERY-004": {
+      "status": "pending"
+    },
+    "VAL-GALLERY-005": {
+      "status": "pending"
+    },
+    "VAL-GALLERY-006": {
+      "status": "pending"
+    },
+    "VAL-GALLERY-007": {
+      "status": "pending"
+    },
+    "VAL-HOME-001": {
+      "status": "pending"
+    },
+    "VAL-HOME-002": {
+      "status": "pending"
+    },
+    "VAL-HOME-003": {
+      "status": "pending"
+    },
+    "VAL-HOME-004": {
+      "status": "pending"
+    },
+    "VAL-HOME-005": {
+      "status": "pending"
+    },
+    "VAL-HOME-006": {
+      "status": "pending"
+    },
+    "VAL-HOME-007": {
+      "status": "pending"
+    },
+    "VAL-HOME-008": {
+      "status": "pending"
+    },
+    "VAL-HOME-009": {
+      "status": "pending"
+    },
+    "VAL-HOME-010": {
+      "status": "pending"
+    },
+    "VAL-HOME-011": {
+      "status": "pending"
+    },
+    "VAL-HOME-012": {
+      "status": "pending"
+    },
+    "VAL-HOME-013": {
+      "status": "pending"
+    },
+    "VAL-HOME-014": {
+      "status": "pending"
+    },
+    "VAL-HOME-015": {
+      "status": "pending"
+    },
+    "VAL-HOME-016": {
+      "status": "pending"
+    },
+    "VAL-HOME-017": {
+      "status": "pending"
+    },
+    "VAL-HOME-018": {
+      "status": "pending"
+    },
+    "VAL-HOME-019": {
+      "status": "pending"
+    },
+    "VAL-HOME-020": {
+      "status": "pending"
+    },
+    "VAL-XCUT-001": {
+      "status": "pending"
+    },
+    "VAL-XCUT-002": {
+      "status": "pending"
+    }
+  }
+}

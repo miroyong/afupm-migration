@@ -1,0 +1,8 @@
+{
+  "workerModel": "custom:DeepSeek-Chat-(BYOK)-0",
+  "workerReasoningEffort": "none",
+  "validationWorkerModel": "custom:DeepSeek-Chat-(BYOK)-0",
+  "validationWorkerReasoningEffort": "none",
+  "skipScrutiny": false,
+  "skipUserTesting": false
+}
