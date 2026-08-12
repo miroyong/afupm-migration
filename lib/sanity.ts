@@ -69,7 +69,7 @@ export async function getPostCategories(language: string) {
 // ---- Gallery ----
 export async function getGalleryImages(language: string) {
   return client.fetch(
-    `*[_type == "galleryImage" && language == $language] | order(order asc)`,
+    `*[_type == "galleryImage" && language == $language] | order(order asc) { _id, alt, "url": image.asset->url }`,
     { language },
     { next: { revalidate: 60 } }
   );

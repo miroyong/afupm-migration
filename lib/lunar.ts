@@ -30,7 +30,7 @@ export function getCigDate(date: Date = new Date()): CigDate | null {
     ) {
       return null;
     }
-    return { year: year - CIG_YEAR_OFFSET, month, day };
+    return { year: year - CIG_YEAR_OFFSET, month: month + 1, day };
   } catch {
     return null;
   }

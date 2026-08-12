@@ -1,15 +1,26 @@
 import { getTranslations } from "next-intl/server";
+import { getSiteSettings } from "@/lib/sanity";
 
 // Defaults used until the siteSettings singleton is populated in Sanity.
 // Editors can override these via siteSettings.socialLinks.
 const SOCIAL_LINKS = {
-  youtube: "https://www.youtube.com/channel/UCxRwNt76-Hvj1rIEKqfsikA",
+  youtube: "https://www.youtube.com/@afupmmedia",
   instagram: "https://www.instagram.com/afupm",
 };
 
 export async function Footer() {
   const t = await getTranslations("footer");
   const year = new Date().getFullYear();
+
+  let youtube = SOCIAL_LINKS.youtube;
+  let instagram = SOCIAL_LINKS.instagram;
+  try {
+    const settings = await getSiteSettings();
+    youtube = settings?.socialLinks?.youtube || youtube;
+    instagram = settings?.socialLinks?.instagram || instagram;
+  } catch {
+    // fall back to defaults
+  }
 
   return (
     <footer className="border-t border-gray-200 bg-gray-50">
@@ -22,7 +33,7 @@ export async function Footer() {
           <p className="font-semibold text-gray-800">{t("followUs")}</p>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
             <a
-              href={SOCIAL_LINKS.youtube}
+              href={youtube}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 transition-colors hover:text-blue-900"
@@ -30,7 +41,7 @@ export async function Footer() {
               YouTube
             </a>
             <a
-              href={SOCIAL_LINKS.instagram}
+              href={instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 transition-colors hover:text-blue-900"

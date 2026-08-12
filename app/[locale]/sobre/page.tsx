@@ -3,10 +3,10 @@ import { getPage } from "@/lib/sanity";
 import { PortableText } from "next-sanity";
 import { notFound } from "next/navigation";
 
-export default async function Page({ params }: { params: Promise<{ locale: string; slug: string[] }> }) {
-  const { locale, slug } = await params;
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   setRequestLocale(locale);
-  const page = await getPage("sobre/" + slug.join("/"), locale);
+  const page = await getPage("sobre", locale);
   if (!page) notFound();
   return (
     <div className="mx-auto max-w-3xl px-6 py-14">
