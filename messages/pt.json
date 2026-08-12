@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "title": "AFUPM — Associação das Famílias para a Unificação e a Paz Mundial",
+    "description": "Site oficial da AFUPM (familias.org.br): calendário CIG, palavra do dia, notícias, eventos e muito mais."
+  },
+  "header": {
+    "navLabel": "Navegação principal",
+    "nav": {
+      "home": "Início",
+      "sobre": "Sobre",
+      "noticias": "Notícias",
+      "eventos": "Eventos",
+      "galeria": "Galeria",
+      "bencao": "Bênção",
+      "anuncios": "Anúncios",
+      "sedes": "Sedes"
+    },
+    "openMenu": "Abrir menu de navegação",
+    "closeMenu": "Fechar menu de navegação",
+    "switchToLocale": "Mudar idioma para {locale}"
+  },
+  "footer": {
+    "siteName": "AFUPM",
+    "tagline": "Associação das Famílias para a Unificação e a Paz Mundial",
+    "followUs": "Siga-nos",
+    "pureWaterWave": "Pure Water Wave",
+    "rights": "Todos os direitos reservados."
+  },
+  "home": {
+    "hero": {
+      "title": "AFUPM",
+      "subtitle": "Associação das Famílias para a Unificação e a Paz Mundial",
+      "tagline": "Famílias centradas em Deus, vivendo pela paz mundial."
+    },
+    "cig": {
+      "title": "Calendário CIG",
+      "description": "Data lunar do Cheon Il Guk"
+    },
+    "solar": {
+      "title": "Data Solar",
+      "description": "Data do calendário gregoriano"
+    },
+    "wordOfTheDay": {
+      "title": "Palavra do Dia",
+      "empty": "Nenhuma frase disponível",
+      "unavailable": "Frase indisponível no momento"
+    }
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "A página que você procura não existe ou foi movida.",
+    "backHome": "Voltar para o início"
+  }
+}
