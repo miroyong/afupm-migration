@@ -1,5 +1,67 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap");
 @import "tailwindcss";
+
+/*
+ * Self-hosted fonts captured from the original Wix site (familias.org.br).
+ * The original masthead uses Avenir LT Heavy for headings, Helvetica Neue
+ * Light for body copy, DIN Next Light for menu/navigation, and Proxima Nova
+ * for some labels. These are served locally so the design survives the Wix
+ * account being cancelled.
+ */
+@font-face {
+  font-family: "Avenir LT Heavy";
+  src: url("/fonts/avenir-heavy.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Light";
+  src: url("/fonts/avenir-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/helvetica-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/helvetica-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/helvetica-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN Next Light";
+  src: url("/fonts/dinnext-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/proximanova-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme {
   /* Brand blues */
@@ -28,9 +90,13 @@
   --color-gray-light: #e3e3e3;
   --color-gray-dark: #4f4f4f;
 
-  /* Fonts */
-  --font-sans: "Roboto", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-heading: "Jost", "Roboto", ui-sans-serif, system-ui, sans-serif;
+  /* Fonts (self-hosted, matching the original Wix site) */
+  --font-sans: "Helvetica Neue", "DIN Next Light", ui-sans-serif, system-ui,
+    -apple-system, sans-serif;
+  --font-heading: "Avenir LT Heavy", "Avenir LT Light", ui-sans-serif,
+    system-ui, sans-serif;
+  --font-menu: "DIN Next Light", "Helvetica Neue", ui-sans-serif, system-ui,
+    sans-serif;
 }
 
 html {
