@@ -6,31 +6,47 @@
   "header": {
     "navLabel": "Navegação principal",
     "nav": {
-      "home": "Início",
       "sobre": "Sobre",
-      "noticias": "Notícias",
-      "eventos": "Eventos",
-      "galeria": "Galeria",
-      "bencao": "Bênção",
+      "visao": "Visão",
+      "fundadores": "Sobre os Fundadores",
+      "mensagemPresidente": "Mensagem da Presidente",
+      "resolucao": "Resolução",
+      "novaVerdade": "Nova Verdade",
+      "escrituras": "As Escrituras",
+      "historia": "História",
+      "atividadesMissionarias": "Atividades Missionárias",
+      "centralAnuncios": "Central de Anúncios",
       "anuncios": "Anúncios",
+      "eventos": "Eventos",
+      "bencao": "Bênção",
+      "midia": "Mídia",
+      "galeria": "Galeria",
       "sedes": "Sedes"
     },
     "openMenu": "Abrir menu de navegação",
     "closeMenu": "Fechar menu de navegação",
-    "switchToLocale": "Mudar idioma para {locale}"
+    "switchToLocale": "Mudar idioma para {locale}",
+    "searchPlaceholder": "Buscar…",
+    "searchLabel": "Buscar no site",
+    "login": "Login"
   },
   "footer": {
     "siteName": "AFUPM",
     "tagline": "Associação das Famílias para a Unificação e a Paz Mundial",
     "followUs": "Siga-nos",
     "pureWaterWave": "Pure Water Wave",
-    "rights": "Todos os direitos reservados."
+    "rights": "Todos os direitos reservados.",
+    "backToTop": "Ir para o Topo",
+    "columns": {
+      "sobre": "Sobre",
+      "anuncios": "Anúncios",
+      "sedes": "Sedes"
+    }
   },
   "home": {
     "hero": {
-      "title": "AFUPM",
-      "subtitle": "Associação das Famílias para a Unificação e a Paz Mundial",
-      "tagline": "Famílias centradas em Deus, vivendo pela paz mundial."
+      "kicker": "Associação das Famílias para a Unificação e a Paz Mundial",
+      "subtitle": "Famílias centradas em Deus, vivendo pela paz mundial."
     },
     "cig": {
       "title": "Calendário CIG",
@@ -44,6 +60,37 @@
       "title": "Palavra do Dia",
       "empty": "Nenhuma frase disponível",
       "unavailable": "Frase indisponível no momento"
+    },
+    "sections": {
+      "noticiasNacionais": "Notícias Nacionais",
+      "informesHyojeong": "Informes Hyojeong",
+      "quadroDeAvisos": "Quadro de Avisos",
+      "destaques": "Destaques",
+      "conhecaMais": "Conheça Mais Sobre a Associação das Famílias",
+      "conhecaMaisText": "A Associação das Famílias para a Unificação e a Paz Mundial (AFUPM) reúne famílias que trabalham pela unificação e pela paz mundial. Conheça nossa visão, história e atividades missionárias.",
+      "conhecaMaisCta": "Saiba mais",
+      "more": "+Mais",
+      "noEvents": "Não há eventos no momento",
+      "noPosts": "Nenhuma publicação disponível"
+    }
+  },
+  "pages": {
+    "noticias": {
+      "title": "Notícias",
+      "empty": "Nenhum artigo"
+    },
+    "galeria": {
+      "title": "Galeria",
+      "empty": "Nenhuma foto disponível"
+    },
+    "eventos": {
+      "title": "Eventos",
+      "upcoming": "Próximos eventos",
+      "past": "Eventos passados",
+      "empty": "Nenhum evento"
+    },
+    "post": {
+      "back": "Voltar para Notícias"
     }
   },
   "notFound": {

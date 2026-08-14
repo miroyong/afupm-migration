@@ -17,9 +17,9 @@ const WORD_OF_THE_DAY_QUERY = `*[_type == "wordOfTheDay" && language == $languag
 }`;
 
 /**
- * Server-rendered "Palavra do Dia" section. Fetches the language-scoped
- * collection from Sanity and rotates deterministically by UTC date. Falls back
- * to a localized message for empty collections or query failures.
+ * Server-rendered "Palavra do Dia" card, styled after the original Wix widget
+ * (a warm, colored card with a centered quote). Fetches the language-scoped
+ * collection from Sanity and rotates deterministically by UTC date.
  */
 export async function WordOfTheDay() {
   const locale = (await getLocale()) as "pt" | "es";
@@ -40,15 +40,19 @@ export async function WordOfTheDay() {
   }
 
   return (
-    <section className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-      <h2 className="text-xl font-bold text-blue-900">{t("title")}</h2>
-      {phrase ? (
-        <blockquote className="mt-6 text-center text-2xl font-medium italic leading-relaxed text-gray-800">
-          “{phrase}”
-        </blockquote>
-      ) : (
-        <p className="mt-6 text-center text-gray-500">{t("empty")}</p>
-      )}
+    <section className="mx-auto -mt-10 w-full max-w-3xl px-6">
+      <div className="relative overflow-hidden rounded-2xl border border-terracotta-pale bg-cream px-6 py-8 shadow-md sm:px-10">
+        <h2 className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-terracotta">
+          {t("title")}
+        </h2>
+        {phrase ? (
+          <blockquote className="mt-5 text-center font-heading text-2xl font-medium italic leading-relaxed text-navy">
+            “{phrase}”
+          </blockquote>
+        ) : (
+          <p className="mt-5 text-center text-gray-mid">{t("empty")}</p>
+        )}
+      </div>
     </section>
   );
 }

@@ -31,18 +31,49 @@ export async function getPages(language: string) {
   );
 }
 
+// Shared projection for post cards / lists. Resolves the main image URL and
+// referenced categories so the UI does not need extra joins.
+const POST_PROJECTION = `{
+  _id,
+  title,
+  slug,
+  excerpt,
+  publishedAt,
+  featured,
+  "mainImageUrl": mainImage.asset->url,
+  categories[]->{ _id, title, slug }
+}`;
+
 // ---- Posts ----
 export async function getPosts(language: string, category?: string) {
   if (category) {
     return client.fetch(
-      `*[_type == "post" && language == $language && $category in categories[]->slug.current] | order(publishedAt desc)`,
+      `*[_type == "post" && language == $language && $category in categories[]->slug.current] | order(publishedAt desc) ${POST_PROJECTION}`,
       { language, category },
       { next: { revalidate: 60 } }
     );
   }
   return client.fetch(
-    `*[_type == "post" && language == $language] | order(publishedAt desc)`,
+    `*[_type == "post" && language == $language] | order(publishedAt desc) ${POST_PROJECTION}`,
     { language },
+    { next: { revalidate: 60 } }
+  );
+}
+
+/**
+ * Featured ("DESTAQUES") posts. When no posts are explicitly flagged featured,
+ * falls back to the most recent posts so the section is never empty.
+ */
+export async function getFeaturedPosts(language: string, limit = 3) {
+  const featured = await client.fetch(
+    `*[_type == "post" && language == $language && featured == true] | order(publishedAt desc) [0...$limit] ${POST_PROJECTION}`,
+    { language, limit },
+    { next: { revalidate: 60 } }
+  );
+  if (featured && featured.length > 0) return featured;
+  return client.fetch(
+    `*[_type == "post" && language == $language] | order(publishedAt desc) [0...$limit] ${POST_PROJECTION}`,
+    { language, limit },
     { next: { revalidate: 60 } }
   );
 }

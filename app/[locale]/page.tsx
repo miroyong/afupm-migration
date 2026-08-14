@@ -1,11 +1,15 @@
 import { setRequestLocale } from "next-intl/server";
-import { CigCalendar } from "@/components/cig-calendar";
 import { Hero } from "@/components/hero";
-import { SolarDate } from "@/components/solar-date";
 import { WordOfTheDay } from "@/components/word-of-the-day";
+import { NewsSection } from "@/components/news-section";
+import {
+  AboutSection,
+  FeaturedSection,
+  NoticesSection,
+} from "@/components/home-sections";
 
-// The "Palavra do Dia" rotates daily (UTC date), so the home page is rendered
-// per request rather than statically at build time.
+// The "Palavra do Dia" rotates daily (UTC date) and the CIG/solar dates are
+// client-computed, so the home page is rendered per request.
 export const dynamic = "force-dynamic";
 
 export default async function HomePage({
@@ -19,11 +23,25 @@ export default async function HomePage({
   return (
     <div className="flex flex-col">
       <Hero />
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-10 px-6 py-14">
-        <CigCalendar />
-        <SolarDate />
-        <WordOfTheDay />
+      <WordOfTheDay />
+
+      <div className="mt-12">
+        <NewsSection
+          titleKey="noticiasNacionais"
+          category="noticias-nacionais"
+          moreHref="/noticias"
+        />
+        <NewsSection
+          titleKey="informesHyojeong"
+          category="informe-hj"
+          moreHref="/noticias"
+          tone="warm"
+        />
+        <NoticesSection />
       </div>
+
+      <FeaturedSection />
+      <AboutSection />
     </div>
   );
 }

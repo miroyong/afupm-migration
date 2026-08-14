@@ -1,26 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Brand blues */
+  --color-primary: #225da7;
+  --color-primary-deep: #173e6f;
+  --color-navy: #0b1f38;
+  --color-sky: #0088cb;
+
+  /* Greens */
+  --color-green-brand: #92b079;
+  --color-green-dark: #618741;
+  --color-green-deeper: #39641d;
+  --color-green-light: #d2e4c7;
+  --color-green-pale: #f3f8f0;
+
+  /* Warm */
+  --color-cream: #f2eae7;
+  --color-terracotta: #8b614f;
+  --color-terracotta-light: #a9806f;
+  --color-terracotta-pale: #e5cec0;
+  --color-orange-brand: #fa854f;
+  --color-orange-dark: #ea6020;
+
+  /* Grays */
+  --color-gray-mid: #6e6e6e;
+  --color-gray-light: #e3e3e3;
+  --color-gray-dark: #4f4f4f;
+
+  /* Fonts */
+  --font-sans: "Roboto", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-heading: "Jost", "Roboto", ui-sans-serif, system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #2b2b2b;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }

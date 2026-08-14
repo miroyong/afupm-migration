@@ -40,7 +40,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className="flex min-h-screen flex-col bg-white text-gray-900 antialiased">
+      <body className="flex min-h-screen flex-col bg-white text-gray-dark antialiased">
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main id="main" className="flex-1">
